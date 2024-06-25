@@ -8,7 +8,7 @@ module.exports = {
         const trialRow = new ActionRowBuilder();
         trialRow.components.push(
             new ButtonBuilder()
-                .setCustomId(`1255064036928651315`)  // Uniek ID voor de knop
+                .setCustomId(`1253354158954643456`)  // Uniek ID voor de knop
                 .setLabel("Trial")  // Tekst op de knop
                 .setStyle(ButtonStyle.Success) // Kleur van de knop
                 .setDisabled(true),
@@ -22,7 +22,7 @@ module.exports = {
         const allyRow = new ActionRowBuilder();
         allyRow.components.push(
             new ButtonBuilder()
-                .setCustomId(`1255064036928651315}`)  // Uniek ID voor de knop
+                .setCustomId(`1253354158954643456`)  // Uniek ID voor de knop
                 .setLabel("Trial")  // Tekst op de knop
                 .setStyle(ButtonStyle.Secondary) // Kleur van de knop
                 .setDisabled(true),
@@ -42,8 +42,7 @@ module.exports = {
 
             if (memberId === interaction.member.id) {
 
-                if (roleId === "1255064036928651315") {
-                    const roleId = "1255064036928651315";
+                if (roleId === "1253354158954643456") {
                     const role = interaction.guild.roles.cache.get(roleId);
                     const member = interaction.member;
                     await member.roles.add(role);
@@ -52,7 +51,7 @@ module.exports = {
                         components: [trialRow]
                     });
                     await interaction.message.edit({components: [trialRow]});
-                } else if (roleId === "1255064092243263541") {
+                } else if (roleId === "1253354256979988621") {
                     const role = interaction.guild.roles.cache.find(role => role.name === "Ally");
                     const member = interaction.member;
                     await member.roles.add(role);

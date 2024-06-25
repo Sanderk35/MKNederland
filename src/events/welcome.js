@@ -8,12 +8,12 @@ module.exports = {
         const row = new ActionRowBuilder();
         row.components.push(
             new ButtonBuilder()
-                .setCustomId(`1255064036928651315_${member.id}`)  // Uniek ID voor de knop
+                .setCustomId(`1253354158954643456_${member.id}`)  // Uniek ID voor de knop
                 .setLabel("Trial")  // Tekst op de knop
                 .setStyle(ButtonStyle.Secondary), // Kleur van de knop
 
             new ButtonBuilder()
-                .setCustomId(`1255064092243263541_${member.id}`)  // Uniek ID voor de knop
+                .setCustomId(`1253354256979988621_${member.id}`)  // Uniek ID voor de knop
                 .setLabel("Ally")  // Tekst op de knop
                 .setStyle(ButtonStyle.Secondary) // Kleur van de knop
         );
